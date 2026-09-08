@@ -1,0 +1,151 @@
+:root {
+    --home-navy: #07192f;
+    --home-blue: #123b68;
+    --home-ink: #0b1d35;
+    --home-muted: #596575;
+    --home-cloud: #f4f7fa;
+    --home-line: #dbe4ec;
+}
+
+body.home-shell {
+    background: var(--home-cloud);
+    color: var(--home-ink);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.home-header {
+    background: rgba(7, 25, 47, 0.97);
+    box-shadow: 0 0.25rem 1rem rgba(7, 25, 47, 0.12);
+    z-index: 1030;
+}
+
+.home-logo-icon {
+    background: #fff;
+    border-radius: 0.45rem;
+    height: 2.8rem;
+    object-fit: contain;
+    padding: 0.18rem;
+    width: 2.8rem;
+}
+
+.home-header .navbar-brand small {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.home-header .nav-link {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.9rem;
+}
+
+.home-header .nav-link:hover,
+.home-header .nav-link.active {
+    color: #fff;
+}
+
+.home-hero {
+    background: linear-gradient(135deg, #f9fbfd 0%, #e9f0f6 100%);
+    min-height: 38rem;
+}
+
+.home-kicker {
+    color: var(--home-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.home-hero h1 {
+    color: var(--home-navy);
+    letter-spacing: 0.01em;
+}
+
+.home-hero .lead {
+    max-width: 32rem;
+}
+
+.home-hero .btn-primary {
+    background-color: var(--home-navy);
+    border-color: var(--home-navy);
+}
+
+.home-hero .btn-primary:hover {
+    background-color: var(--home-blue);
+    border-color: var(--home-blue);
+}
+
+.home-carousel {
+    border: 0.65rem solid #fff;
+    border-radius: 1.35rem;
+    overflow: hidden;
+}
+
+.home-carousel .carousel-item img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.home-carousel .carousel-indicators {
+    margin-bottom: 1.25rem;
+}
+
+.service-item {
+    background: #fff;
+    border: 1px solid var(--home-line);
+    border-radius: 0.75rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.service-item:hover {
+    border-color: #8ca4ba;
+    box-shadow: 0 0.8rem 1.8rem rgba(7, 25, 47, 0.08);
+    transform: translateY(-0.2rem);
+}
+
+.service-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.home-promise {
+    background: #e6edf3;
+}
+
+.home-promise h2 {
+    max-width: 42rem;
+}
+
+.home-footer {
+    background: var(--home-navy);
+}
+
+.footer-logo {
+    background: #fff;
+    border-radius: 0.5rem;
+    height: auto;
+    max-width: 12rem;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.68);
+    display: block;
+    margin-top: 0.65rem;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .home-header .navbar-nav {
+        padding-top: 1rem;
+    }
+
+    .home-hero {
+        min-height: auto;
+    }
+}

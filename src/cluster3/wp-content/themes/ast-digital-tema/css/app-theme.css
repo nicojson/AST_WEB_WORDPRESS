@@ -1,0 +1,293 @@
+:root {
+    --app-ink: #17212b;
+    --app-muted: #687583;
+    --app-canvas: #f3f5f7;
+    --app-line: #e2e7eb;
+    --app-night: #101820;
+    --app-night-soft: #172630;
+    --app-accent: #f6b73c;
+    --app-accent-soft: rgba(246, 183, 60, 0.14);
+}
+
+body.app-shell {
+    background: var(--app-canvas) !important;
+    color: var(--app-ink);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.app-shell .app-sidebar {
+    background: linear-gradient(160deg, var(--app-night-soft), var(--app-night)) !important;
+    min-height: 100vh;
+}
+
+.app-shell .app-brand {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 1.5rem;
+}
+
+.app-shell .app-brand img {
+    background: #fff;
+    border: 0;
+    border-radius: 0.6rem;
+    height: auto !important;
+    max-height: 76px;
+    max-width: 150px !important;
+    object-fit: contain;
+    padding: 0.35rem;
+    width: 100%;
+}
+
+.app-shell .app-sidebar .nav-link {
+    border-radius: 0.5rem;
+    color: rgba(255, 255, 255, 0.62) !important;
+    margin-bottom: 0.35rem;
+    padding: 0.8rem 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.app-shell .app-sidebar .nav-link:hover,
+.app-shell .app-sidebar .nav-link.active {
+    background: var(--app-accent-soft);
+    color: #fff !important;
+    transform: translateX(3px);
+}
+
+.app-shell .app-sidebar .nav-link.active {
+    box-shadow: inset 3px 0 0 var(--app-accent);
+}
+
+.app-shell .app-topbar {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.app-shell .app-profile {
+    border-left: 1px solid var(--app-line);
+    padding-left: 1rem;
+}
+
+.app-shell .app-profile img {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--app-accent);
+}
+
+.app-shell .app-main {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.app-shell main > .card,
+.app-shell main > .mb-4.card,
+.app-shell main > .row .card {
+    border: 1px solid var(--app-line);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.35rem 1.25rem rgba(23, 33, 43, 0.06);
+    overflow: hidden;
+}
+
+.app-shell main > .card .card-header,
+.app-shell main > .card .card-footer,
+.app-shell main > .row .card .card-header,
+.app-shell main > .row .card .card-footer {
+    background-color: #fff !important;
+    border-color: var(--app-line);
+}
+
+.app-shell main > .card .card-header h2,
+.app-shell main > .card .card-header h5,
+.app-shell main > .row .card .card-header h5 {
+    color: var(--app-ink);
+    font-weight: 700;
+}
+
+.app-shell .form-label {
+    color: var(--app-ink);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.app-shell .form-control,
+.app-shell .form-select {
+    border-color: var(--app-line);
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.85rem;
+}
+
+.app-shell .form-control:focus,
+.app-shell .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+.app-shell .btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.app-shell .btn-primary {
+    background-color: var(--app-night);
+    border-color: var(--app-night);
+}
+
+.app-shell .btn-primary:hover {
+    background-color: #263b4b;
+    border-color: #263b4b;
+}
+
+.app-shell .table {
+    --bs-table-hover-bg: #f8fafb;
+    color: var(--app-ink);
+}
+
+.app-shell .table thead th {
+    background: #f7f9fa;
+    border-bottom-color: var(--app-line);
+    color: var(--app-muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.app-shell .table tbody td {
+    border-color: #edf0f2;
+    vertical-align: middle;
+}
+
+.app-shell .pagination .page-link {
+    border-color: var(--app-line);
+}
+
+.app-shell .pagination .active .page-link {
+    background-color: var(--app-night);
+    border-color: var(--app-night);
+}
+
+.app-shell .stepper {
+    background: #fff;
+    border: 1px solid var(--app-line);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.35rem 1rem rgba(23, 33, 43, 0.05);
+    padding: 1.25rem;
+}
+
+.app-shell .stepper .badge {
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px var(--app-line);
+}
+
+.app-shell .alert-light {
+    background: #f8fafb;
+    border-color: var(--app-line) !important;
+}
+
+.auth-screen {
+    background: #101820;
+    min-height: 100vh;
+}
+
+.auth-screen .auth-aside {
+    position: relative;
+}
+
+.auth-screen .auth-carousel {
+    inset: 0;
+    position: absolute;
+}
+
+.auth-screen .auth-carousel::after {
+    background: linear-gradient(145deg, rgba(21, 41, 54, 0.88) 0%, rgba(16, 24, 32, 0.64) 72%);
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.auth-screen .auth-carousel .carousel-inner,
+.auth-screen .auth-carousel .carousel-item {
+    height: 100%;
+}
+
+.auth-screen .auth-carousel .carousel-indicators,
+.auth-screen .auth-carousel .carousel-control-prev,
+.auth-screen .auth-carousel .carousel-control-next {
+    z-index: 2;
+}
+
+.auth-screen .auth-aside-content {
+    position: relative;
+    z-index: 2;
+}
+
+.auth-screen .auth-aside::after {
+    border: 1px solid rgba(246, 183, 60, 0.35);
+    border-radius: 50%;
+    content: "";
+    height: 28rem;
+    position: absolute;
+    right: -10rem;
+    top: 12%;
+    width: 28rem;
+}
+
+.auth-screen .auth-card {
+    border: 1px solid rgba(255, 255, 255, 0.75) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.18) !important;
+}
+
+.auth-screen .auth-card img {
+    background: #fff;
+    border: 1px solid var(--app-line);
+    max-width: 220px;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.app-shell .ast-document-logo {
+    background: #fff;
+    border: 1px solid var(--app-line);
+    border-radius: 0.5rem;
+    max-height: 82px;
+    object-fit: contain;
+    padding: 0.35rem;
+    width: 100%;
+}
+
+.auth-screen .form-control {
+    border-color: var(--app-line);
+    border-radius: 0.5rem;
+    padding: 0.75rem 0.85rem;
+}
+
+.auth-screen .btn-primary {
+    background: var(--app-night);
+    border-color: var(--app-night);
+}
+
+@media (max-width: 767.98px) {
+    .app-shell .app-sidebar {
+        min-height: auto;
+    }
+
+    .app-shell .app-topbar {
+        position: static;
+    }
+
+    .app-shell .app-profile {
+        border-left: 0;
+        margin-top: 0.75rem;
+        padding-left: 0;
+    }
+
+    .app-shell .app-main {
+        padding: 1.25rem !important;
+    }
+
+    .app-shell .table-responsive {
+        border-radius: 0;
+    }
+}
