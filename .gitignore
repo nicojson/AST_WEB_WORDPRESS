@@ -1,0 +1,44 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editores e IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Variables de entorno y secretos locales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencias y artefactos de desarrollo
+node_modules/
+vendor/
+coverage/
+dist/
+build/
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Archivos generados por WordPress
+src/cluster3/wp-content/uploads/
+src/cluster3/wp-content/cache/
+src/cluster3/wp-content/upgrade/
+src/cluster3/wp-content/backup*/
+src/cluster3/wp-content/debug.log
+
+# Archivos generados por herramientas de temas
+src/cluster3/wp-content/themes/*/node_modules/
+src/cluster3/wp-content/themes/*/.sass-cache/
+src/cluster3/wp-content/themes/*/dist/

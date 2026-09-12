@@ -59,3 +59,48 @@ function ast_digital_enqueue_assets() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'ast_digital_enqueue_assets' );
+
+function ast_digital_create_pages() {
+    if ( get_option( 'ast_digital_pages_created' ) ) {
+        return;
+    }
+
+    $pages = array(
+        'servicios' => array(
+            'title'    => 'Servicios',
+            'template' => 'page-servicios.php',
+        ),
+        'nosotros' => array(
+            'title'    => 'Nosotros',
+            'template' => 'page-nosotros.php',
+        ),
+        'contacto' => array(
+            'title'    => 'Contacto',
+            'template' => 'page-contacto.php',
+        ),
+    );
+
+    foreach ( $pages as $slug => $page ) {
+        $existing_page = get_page_by_path( $slug, OBJECT, 'page' );
+
+        if ( ! $existing_page ) {
+            $page_id = wp_insert_post( array(
+                'post_title'   => $page['title'],
+                'post_name'    => $slug,
+                'post_status'  => 'publish',
+                'post_type'    => 'page',
+                'post_content' => '',
+            ) );
+
+            if ( ! is_wp_error( $page_id ) ) {
+                update_post_meta( $page_id, '_wp_page_template', $page['template'] );
+            }
+        } else {
+            update_post_meta( $existing_page->ID, '_wp_page_template', $page['template'] );
+        }
+    }
+
+    update_option( 'ast_digital_pages_created', true );
+}
+add_action( 'after_switch_theme', 'ast_digital_create_pages' );
+add_action( 'init', 'ast_digital_create_pages' );

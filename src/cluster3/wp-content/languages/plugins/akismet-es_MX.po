@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-07 17:10:54+0000\n"
+"PO-Revision-Date: 2026-08-21 19:47:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,39 @@ msgstr ""
 "X-Generator: GlotPress/4.1.0\n"
 "Language: es_MX\n"
 "Project-Id-Version: Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release)\n"
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/setup-jetpack.php:83
+msgid "Want to use a different account? <a href=\"%1$s\" class=\"akismet-external-link\" target=\"_blank\" rel=\"noopener\">Visit akismet.com%2$s</a> to set it up and get your API key."
+msgstr "¿Quieres usar otra cuenta? <a href=\"%1$s\" class=\"akismet-external-link\" target=\"_blank\" rel=\"noopener\">Entra en akismet.com%2$s</a> para configurarla y conseguir tu clave API."
+
+#. translators: 1: clickable URL that leads to more information regarding an
+#. error code, 2: hidden screen-reader text noting the link opens in a new tab.
+#: views/notice.php:90
+msgid "For more information, see the <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">error documentation on akismet.com%2$s</a>"
+msgstr "Para obtener más información, consulta la <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">documentación sobre el error en akismet.com%2$s</a>"
+
+#. translators: 1: URL to the contact form, 2: hidden screen-reader text noting
+#. the link opens in a new tab.
+#: views/notice.php:61
+msgid "If you believe your site should not be classified as commercial, <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">please get in touch%2$s</a>"
+msgstr "Si crees que tu sitio no debería clasificarse como comercial, <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">ponte en contacto con nosotros%2$s</a>"
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/notice.php:55
+msgid "Your current subscription is for <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">personal, non-commercial use%2$s</a>. Please upgrade your plan to continue using Akismet."
+msgstr "Tu suscripción actual es para <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">uso personal y no comercial%2$s</a>. Actualiza tu plan para seguir usando Akismet."
+
+#: views/config.php:331
+msgid "Account overview on akismet.com (opens in a new tab)"
+msgstr "Vista general de la cuenta en akismet.com (se abre en una nueva pestaña)"
+
+#. translators: The placeholder is the name of a plugin, like "Jetpack" .
+#: views/compatible-plugins.php:81
+msgid "Documentation for %s (opens in a new tab)"
+msgstr "Documentación de %s (se abre en una pestaña nueva)"
 
 #. translators: The placeholder is a URL for checking pending comments.
 #: views/notice.php:211
@@ -310,6 +343,44 @@ msgstr "Una vez que hayas elegido un plan, vuelve aquí para completar la config
 #: views/notice.php:113
 msgid "Your web host or server administrator has disabled PHP&#8217;s <code>gethostbynamel</code> function."
 msgstr "Tu proveedor de hosting o administrador del servidor ha desactivado la función <code>gethostbynamel</code> de PHP."
+
+#. translators: 1: URL to the Akismet contact form, 2: hidden screen-reader
+#. text noting the link opens in a new tab.
+#: views/notice.php:234
+msgid "Please enter a new key or <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">contact Akismet support%2$s</a>"
+msgstr "Introduce una nueva clave o <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">contacta con el soporte de Akismet%2$s</a>."
+
+#. translators: 1: URL to the Akismet pricing page, 2: hidden screen-reader
+#. text noting the link opens in a new tab.
+#: views/notice.php:185
+msgid "Please <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">choose a free or paid plan%2$s</a> so Akismet can protect your site from spam."
+msgstr "<a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Elige un plan gratuito o de pago%2$s</a> para que Akismet pueda proteger tu sitio del spam."
+
+#. translators: 1: clickable URL to the Akismet account upgrade page, 2: hidden
+#. screen-reader text noting the link opens in a new tab.
+#: views/notice.php:163
+msgid "You can help us fight spam and upgrade your account by <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">contributing a token amount%2$s</a>"
+msgstr "Puedes ayudarnos a combatir el spam y actualizar tu cuenta <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">colaborando con una pequeña cantidad%2$s</a>"
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#. translators: 1: URL to the Akismet contact form, 2: hidden screen-reader
+#. text noting the link opens in a new tab.
+#: views/notice.php:152 views/notice.php:174
+msgid "Please contact <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Akismet support%2$s</a> for assistance."
+msgstr "Por favor, contacta con el <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">soporte de Akismet%2$s</a> para obtener ayuda."
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/notice.php:141
+msgid "Please visit <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Akismet.com%2$s</a> to purchase a new subscription."
+msgstr "Visita <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Akismet.com%2$s</a> para adquirir una nueva suscripción."
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/notice.php:119
+msgid "Please contact your web host or firewall administrator and give them <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">this information about Akismet&#8217;s system requirements%2$s</a>"
+msgstr "Ponte en contacto con tu proveedor de alojamiento o administrador del cortafuegos y dales <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">esta información sobre los requisitos del sistema de Akismet%2$s</a>"
 
 #: class.akismet-admin.php:737
 msgid "Akismet provisionally cleared this comment."
@@ -804,6 +875,12 @@ msgstr[1] "¡Akismet te ha ahorrado %d minutos!"
 msgid "The API key you entered could not be verified."
 msgstr "La clave de la API que has introducido no ha podido ser verificada."
 
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/notice.php:252
+msgid "The connection to akismet.com could not be established. Please refer to <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">our guide about firewalls%2$s</a> and check your server configuration."
+msgstr "No se ha podido establecer la conexión con akismet.com. Consulta <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">nuestra guía sobre cortafuegos%2$s</a> y comprueba la configuración del servidor."
+
 #: class.akismet-admin.php:760
 msgid "This comment was reported as not spam."
 msgstr "Se ha informado sobre este comentario como no spam."
@@ -1291,6 +1368,12 @@ msgstr "Muestra el número de comentarios aprobados al lado de cada autor de com
 #: class.akismet.php:2101
 msgid "Akismet %1$s requires WordPress %2$s or higher."
 msgstr "Akismet %1$s necesita WordPress %2$s o superior."
+
+#. translators: 1: URL, 2: hidden screen-reader text noting the link opens in a
+#. new tab.
+#: views/notice.php:130
+msgid "Your firewall may be blocking Akismet from connecting to its API. Please contact your host and refer to <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">our guide about firewalls%2$s</a>"
+msgstr "Es posible que tu cortafuegos esté bloqueando la conexión de Akismet con su API. Ponte en contacto con tu proveedor de alojamiento y consulta <a class=\"akismet-external-link\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">nuestra guía sobre cortafuegos%2$s</a>"
 
 #: class.akismet-admin.php:103
 msgid "Comment History"

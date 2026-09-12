@@ -47,6 +47,8 @@ $table_prefix = 'wp_';
  * For developers: WordPress debugging mode.
  */
 define( 'WP_DEBUG', false );
+define( 'FS_METHOD', 'direct' );
+
 
 /* That's all, stop editing! Happy publishing. */
 
