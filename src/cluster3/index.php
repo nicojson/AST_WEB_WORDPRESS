@@ -10,7 +10,7 @@
     
     for ($i = 0; $i < 500; $i++) {
         $numero = rand(1, 100);
-    $numero2 = dechex($numero);
+        $numero2 = dechex($numero);
         echo '<font style="color:#'.$numero2.'"> Hola mundo <br></font>';
     }
     ?>
